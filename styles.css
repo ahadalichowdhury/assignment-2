@@ -66,9 +66,11 @@ body{
 .players{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 27px;
+  grid-column-gap: 30px;
   margin-left: 180px;
   margin-right: 210px;
-  margin-bottom: 165px;
+  /* margin-bottom: 165px;  */
 
 
   
@@ -79,7 +81,7 @@ body{
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  margin-right: 20px;
+  
   margin-bottom: 15px;
   
   
@@ -184,7 +186,7 @@ h3 {
 
 
 @media only screen and (max-width: 688px){
-            /* header start */
+  
             .heading{
               width: 100%;
               flex-direction: column;
@@ -209,19 +211,20 @@ h3 {
 
 
 
-            /* main style */
+          
 
             .players, .fifa, .footer-part{
               display: flex;
               flex-direction: column;
+              align-items: center;
               
-              margin-left: 15px;
-              margin-right: 15px;
+             margin-left: 15px;
+              margin-right: 15px; 
               
             }
 
             .player{
-              margin-bottom: 24px;
+              margin-bottom: 42px;
               margin-right: 0px;
             }
 
