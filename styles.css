@@ -183,20 +183,27 @@ h3 {
 
 
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 688px){
             /* header start */
             .heading{
-              width: 95%;
+              width: 100%;
               flex-direction: column;
+              
+              /* flex-direction: column;
               margin-bottom: 47px;
-              padding-left: 15px;
+              padding-left: 15px; */
             }
             .heading-banner{
+              flex-direction: column;
+            
               margin-left: 15px;
             }
             .heading-banner img{
-              width: 250px;
-              height: 250px;
+              
+            width: 100%;
+             
+              /* width: 250px;
+              height: 250px; */
               
             }
             .heading-name{
