@@ -1,69 +1,58 @@
 /* -------------------------
 -----font style---------
 ---------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /*---------------------------------------
 ---------- heading style ---------
 -----------------------------------------*/
 
-.heading{
-  
+.heading {
   display: flex;
   background-color: blue;
   margin-bottom: 68px;
 }
 
-.heading-name{
-  
+.heading-name {
   margin-left: 100px;
   margin-top: 120px;
   font-weight: bold;
   font-size: 15px;
-  color:white;
-
- 
+  color: white;
 }
-.heading-name a{
+.heading-name a {
   color: white;
   text-decoration: none;
-  background: #E02C6D;
+  background: #e02c6d;
   padding: 10px 24px;
   transition: padding 3s ease;
-  
 }
 
-.heading-name a:hover{
+.heading-name a:hover {
   padding: 20px 48px;
 }
-.heading-banner{
+.heading-banner {
   margin-right: 145px;
   margin-left: 100px;
   margin-top: 90px;
   margin-bottom: 30px;
-
-  
 }
-.heading-banner img{
+.heading-banner img {
   height: 320px;
   width: 400px;
-
-  
-
 }
-
 
 /*---------------------------------------------
 ------------- main style-------------------
 ------------------------------------------------- */
 
-.players{
+.players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 27px;
@@ -71,39 +60,30 @@ body{
   margin-left: 180px;
   margin-right: 210px;
   /* margin-bottom: 165px;  */
-
-
-  
-
 }
-.player{
-
-  background: #FFFFFF;
+.player {
+  background: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  
+
   margin-bottom: 15px;
-  
-  
-  }
+}
 
-
-.player-banner img{
+.player-banner img {
   width: 180px;
   height: 120px;
   margin-bottom: 16px;
 }
 
-.player-info{
+.player-info {
   margin-top: 16px;
   margin-bottom: 33px;
 }
 
-.player-name{
+.player-name {
   font-size: 15px;
   font-size: bold;
 }
-
 
 /* -----------------------------------------
 ----------about-fifa style----------- 
@@ -111,8 +91,7 @@ body{
 .fifa {
   display: flex;
   justify-content: space-around;
- margin-bottom: 158px;
-  
+  margin-bottom: 158px;
 }
 
 .photo-frame {
@@ -123,7 +102,6 @@ body{
   position: relative;
   margin: 15px;
   overflow: hidden;
-  
 }
 
 .photo img {
@@ -154,85 +132,62 @@ h3 {
   transition: transform 2s ease-in-out;
 }
 
-
-
 /*-----------------------------------------------------
 -------------- footer start ------------------------
 -----------------------------------------------------------*/
 
-.footer-part{
+.footer-part {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 65px;
 }
 
-.logo img{
-  width:320px ;
+.logo img {
+  width: 320px;
   height: 90px;
-  
 }
-.social-icon a{
-  margin:0px 14px;
+.social-icon a {
+  margin: 0px 14px;
   height: 32px;
   width: 32px;
 }
 
+@media only screen and (max-width: 688px) {
+  .heading {
+    width: 100%;
+    flex-direction: column;
+  }
+  .heading-banner {
+    flex-direction: column;
 
+    margin-left: 15px;
+  }
+  .heading-banner img {
+    width: 100%;
+  }
+  .heading-name {
+    margin-left: 15px;
+  }
 
+  .players,
+  .fifa,
+  .footer-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
+  .player {
+    margin-bottom: 42px;
+    margin-right: 0px;
+  }
 
-
-
-@media only screen and (max-width: 688px){
-  
-            .heading{
-              width: 100%;
-              flex-direction: column;
-              
-            
-            }
-            .heading-banner{
-              flex-direction: column;
-            
-              margin-left: 15px;
-            }
-            .heading-banner img{
-              
-            width: 100%;
-             
-    
-              
-            }
-            .heading-name{
-              margin-left: 15px;
-            }
-
-
-
-          
-
-            .players, .fifa, .footer-part{
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              
-             margin-left: 15px;
-              margin-right: 15px; 
-              
-            }
-
-            .player{
-              margin-bottom: 42px;
-              margin-right: 0px;
-            }
-
-            .player-banner img{
-              width: 100%;
-              height: 100%;
-            }
-
-
-
+  .player-banner img {
+    width: 100%;
+    height: 100%;
+  }
 }
